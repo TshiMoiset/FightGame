@@ -6,13 +6,14 @@ namespace FightGame
     {
         static void Main(string[] args)
         {
-            int player1;
-            int player2;
-            int hp;
+            int KongFu = 1000;
+            int AlCoholic = 1000;
+
             Random number = new Random();
-            int score = number.Next(1000);
+            int hit = number.Next(500, 1001);
 
-
+            Console.WriteLine("ULTIMATE FIGHT");
+            Console.WriteLine("Kong Fu VS Al Coholic");
 
 
 
