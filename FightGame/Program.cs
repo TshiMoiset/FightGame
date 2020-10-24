@@ -8,8 +8,9 @@ namespace FightGame
         {
             int KongFu = 1000;
             int AlCoholic = 1000;
-            bool gameover = true;
-
+            //int KongFuHitpoint;
+            //int AlCoholicHitPoint;
+            bool attack = true;
 
             Random number = new Random();
             int hit = number.Next(1, 1001);
@@ -17,40 +18,34 @@ namespace FightGame
             Console.WriteLine("ULTIMATE FIGHT");
             Console.WriteLine("Kong Fu VS Al Coholic");
 
-            while ()
+            while (attack)
             {
-                Console.WriteLine("Kong Fu " + hit + "");
+                Console.WriteLine("Kong Fu " + hit + " damage");
                 Console.WriteLine("Al Coholic lost " + hit + " hp");
+
+                Console.WriteLine("Al Coholic " + hit + " damage");
+                Console.WriteLine("Kong lost " + hit + " hp");
+
+
             }
+
             if (KongFu == 0)
             {
-                AlCoholicwin();
+                Console.WriteLine("Al Coholic is the winner");
             }
 
             if (AlCoholic == 0)
             {
-                Kongfuwins();
+                Console.WriteLine("Kong Fu winner");
             }
 
 
-            Console.ReadLine();
+            KongFu -= hit;
+            AlCoholic -= hit;
+
         }
 
-        static void AlCoholicwin()
-        {
-            Console.WriteLine("Al Coholic Win");
-            Console.ReadLine();
-        }
-        static void Kongfuwins()
-        {
 
-            Console.WriteLine("Kong Fu win");
-            Console.ReadLine();
-        }
 
     }
 }
-
-
-
-
